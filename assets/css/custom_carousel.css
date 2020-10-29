@@ -1,0 +1,30 @@
+.carousel__shell {
+  background-color: #ffffff;
+}
+.carousel-item {
+  margin-right: 10px;
+}
+.carousel__shell__uptitle {
+  padding: 35px 0;
+}
+.carousel__shell__uptitle::before {
+  content: "";
+  width: 17px;
+  height: 21px;
+  background-image: url("/assets/images/overline-mark.svg");
+  position: absolute;
+}
+.carousel__shell__uptitle__content {
+  color: #4b4b4b;
+  margin-left: 33px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: 0;
+    bottom: 57%;
+  } */

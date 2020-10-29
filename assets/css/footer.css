@@ -1,0 +1,88 @@
+.footer__shell {
+    padding: 90px 90px;
+  }
+  .footer__shell__elements {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__shell__elements__general-content__title {
+    display: flex;
+    align-items: center;
+  }
+  .footer__shell__elements__general-content__title-content {
+    font-size: 24px;
+    color: #02133c;
+    margin-left: 10px;
+  }
+  .footer__shell__elements__general-content__description {
+    margin-top: 23px;
+    max-width: 235px;
+    font-size: 16px;
+    color: #4b4b4b;
+    letter-spacing: 0.5px;
+  }
+  .footer__shell__elements__general-content__social-links {
+    margin-top: 33px;
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .footer__shell__elements__contact__list__item {
+    display: flex;
+  }
+  
+  .footer__shell__elements__contact__list__item-description {
+    max-width: 226px;
+    margin-left: 18px;
+    line-height: 1.5;
+    color: #4b4b4b;
+  }
+  .footer__shell__elements__contact__list__item:nth-child(1n + 2) {
+    margin-top: 16px;
+  }
+  .footer__shell__elements__contact__list__item:first-child {
+    margin-top: 28px;
+  }
+  .footer__shell__elements__contact__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #02133c;
+  }
+  .footer__copyright {
+    color: #959595;
+    background-color: #02133c;
+    padding: 22px 22px;
+  }
+  .align-copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) { 
+    .footer__shell__elements {
+      column-gap: 45px;
+    }
+    .footer__shell__elements__general-content__title {
+      flex-direction: column;
+    }
+    .footer__shell__elements__contact__title {
+      text-align: center;
+    }
+  }
+  @media (max-width: 767px) {
+    .footer__shell__elements__general-content__social-links {
+      margin-top: 20px;
+    }
+    .footer__shell__elements__contact__title {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .footer__shell__elements {
+      flex-direction: column;
+    }
+    .footer__shell__elements__contact__list__item:first-child {
+      margin-top: 10px;
+    }
+  }
