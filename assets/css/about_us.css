@@ -80,7 +80,7 @@
   .about-us-shell__promisses__services__one__title,
   .about-us-shell__promisses__services__two__title,
   .about-us-shell__promisses__services__three__title {
-    font-size: 19px;
+    font-size: 22px;
     line-height: 26px;
     font-weight: 900;
     color: #02133c;
@@ -97,6 +97,7 @@
   .about-us-shell__promisses__services {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 68px;
     padding-bottom: 122px;
   }
@@ -105,17 +106,26 @@
   .services-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: 23px;
+    /* margin-left: 23px; */
   }
-  .about-us-shell__promisses__services__one,
-  .about-us-shell__promisses__services__two,
-  .about-us-shell__promisses__services__three {
+  .about-us-shell__promisses__services__element {
     display: flex;
     flex-direction: row;
     max-width: 324px;
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    transition: transform .4s;
+  }
+  .about-us-shell__promisses__services__element:hover {
+    transform: scale(1.02); 
   }
   .about-us-shell__promisses__services img {
     align-self: flex-start;
+  }
+
+  .ad-custom-mr {
+    margin-top: 35px;
   }
 
   @media (min-width: 1024px) and (max-width: 1439px) {
@@ -179,6 +189,7 @@
     .about-us-shell__promisses__services__two,
     .about-us-shell__promisses__services__three {
       margin-top: 25px;
+      margin-bottom: 40px;
     }
     .about-us-shell__promisses__title {
       text-align: center;

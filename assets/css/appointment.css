@@ -20,25 +20,27 @@
 }
 .row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
   column-gap: 22px;
   width: 100%;
 }
 .appointment__name {
-  width: 50%;
+  width: 100%;
   padding: 15px 20px;
 }
 .appointment__email {
-  width: 50%;
+  width: 100%;
   padding: 15px 20px;
+  margin-top: 22px;
 }
 .appointment__number {
-  width: 50%;
+  width: 100%;
   padding: 15px 20px;
   margin-top: 22px;
 }
 .appointment-select {
-  width: 50%;
+  width: 100%;
   margin-top: 22px;
 }
 .appointment__textarea {
@@ -85,6 +87,15 @@
   }
 }
 @media (max-width: 767px) {
+  .appointment__shell {
+    padding: 65px 0;
+  }
+  .appointment__shell__main-form__title {
+    font-size: 25px;
+  }
+  .appointment__shell__main-form {
+    padding: 50px 35px 50px 35px;
+  }
   .row {
     flex-direction: column;
   }

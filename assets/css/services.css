@@ -63,6 +63,7 @@
   .services__shell__list__item__description {
       font-size: 16px;
       color: #4B4B4B;
+      text-align: center;
   }
   @media (min-width: 1024px) and (max-width: 1439px) { 
     .services__shell__list { 
