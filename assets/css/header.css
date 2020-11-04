@@ -121,7 +121,7 @@
 }
 .header-shell__down-content__title {
   font-size: 56px;
-  max-width: 583px;
+  /* max-width: 583px; */
   color: #ffffff;
   line-height: 56px;
   font-weight: 900;
