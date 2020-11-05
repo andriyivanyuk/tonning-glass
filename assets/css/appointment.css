@@ -5,7 +5,7 @@
 .appointment__shell__main-form {
   background-color: #ffffff;
   padding: 76px 58px 60px 58px;
-  max-width: 585px;
+  min-width: 585px;
   box-sizing: border-box;
 }
 .appointment__shell__main-form::placeholder {
@@ -95,6 +95,7 @@
   }
   .appointment__shell__main-form {
     padding: 50px 35px 50px 35px;
+    min-width: 200px;
   }
   .row {
     flex-direction: column;

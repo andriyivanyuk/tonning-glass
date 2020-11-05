@@ -41,7 +41,7 @@
       background-color: #FFFFFF;
       width: 324px;
       box-sizing: border-box;
-      padding: 50px 44px;
+      padding: 35px;
   }
   .services__shell__list__item:hover {
     transition: .4s;

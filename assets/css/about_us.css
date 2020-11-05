@@ -110,9 +110,11 @@
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  border-radius: 5px;
+  min-width: 180px;
 }
 .advantages-main-img {
-  width: 600px;
+  width: 100px;
 }
 .quality-wrapper,
 .promisses-wrapper,
@@ -124,7 +126,8 @@
 .about-us-shell__promisses__services__element {
   display: flex;
   flex-direction: row;
-  column-gap: 1em;
+  column-gap: 30px;
+  width: 50%;
   /* max-width: 324px; */
   /* padding: 40px; */
   /* background-color: #ffffff; */
@@ -161,12 +164,16 @@
   .advantages-img {
     padding: 20px 20px;
     height: 100px;
+    background-color: initial;
   }
   .about-us-shell__promisses__services__element {
-    /* margin-top: 20px; */
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  .about-us-shell__promisses__title {
+    font-size: 30px;
+  }
   .custom-media-mr {
     margin-top: 35px;
   }
@@ -190,23 +197,27 @@
     flex-direction: column;
   }
   .advantages-main-img {
-    width: 200px;
+    width: 100px;
   }
   .advantages-img {
     padding: 20px 20px;
     height: 100px;
+    background-color: initial;
   }
   .about-us-shell__promisses__services__element {
     align-items: center;
+    width: 100%;
   }
   .mr-tp-row {
     margin-top: initial;
   }
+  
 }
 @media (max-width: 767px) {
   .about-us-shell__promisses__services {
     flex-direction: column;
     padding-bottom: initial;
+    padding-bottom: 50px;
   }
   .about-us-shell__who-we-are {
     max-width: 85%;
@@ -229,7 +240,7 @@
     align-self: center;
   }
   .about-us-shell__promisses__title {
-    text-align: center;
+    text-align: left;
   }
   .quality-wrapper {
     margin-top: 15px;
@@ -248,6 +259,7 @@
   .about-us-shell__promisses__services__element {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .advantages-info__title,
   .advantages-info__description {
@@ -255,5 +267,11 @@
   }
   .custom-col-rev {
     flex-direction: column-reverse;
+  }
+  .advantages-info__title {
+    margin-top: 20px;
+  }
+  .custom-title-mr {
+    margin-top: 20px;
   }
 }
