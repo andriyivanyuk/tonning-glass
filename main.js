@@ -1,3 +1,13 @@
+var backdrop = document.querySelector(".backdrop");
+var toggleButton = document.querySelector(".toggle-button");
+var mobileNav = document.querySelector(".header__shell__mobile-navigation");
+var desktopNav = document.querySelector(
+  ".header-shell__upper-content__navigation-wrapper__main-navigation"
+);
+var sticky = desktopNav.offsetTop;
+var advantageLink = document.querySelector(".advantage_link");
+var worksLink = document.querySelector(".works_link");
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 4,
@@ -8,25 +18,21 @@ $(document).ready(function () {
         items: 1,
       },
       767: {
-          items: 2
+        items: 2,
       },
       1024: {
-          items: 5
+        items: 5,
       },
       1441: {
-          items: 5
-      }
+        items: 5,
+      },
     },
   });
 });
 
-var backdrop = document.querySelector(".backdrop");
-var toggleButton = document.querySelector(".toggle-button");
-var mobileNav = document.querySelector(".header__shell__mobile-navigation");
-var desktopNav = document.querySelector(
-  ".header-shell__upper-content__navigation-wrapper__main-navigation"
-);
-var sticky = desktopNav.offsetTop;
+if(window.history.replaceState){
+  window.history.replaceState(null, null, window.location.href);
+}
 
 toggleButton.addEventListener("click", function () {
   mobileNav.style.display = "block";
@@ -49,3 +55,4 @@ function addStickyNav() {
     desktopNav.classList.remove("sticky");
   }
 }
+
