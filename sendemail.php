@@ -12,6 +12,8 @@ $alert = '';
 if(isset($_POST['submit'])){
   $name = $_POST['name'];
   $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $service = $_POST['service'];
   $description = $_POST['description'];
 
   try{
@@ -28,11 +30,11 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
-    $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $description</h3>";
+    $mail->Body = "<h3>Имя : $name <br>Email: $email <br>Телефон : $phone <br>Сообщение : $description <br>Услуга: $service</h3>";
 
     $mail->send();
     $alert = '<div class="alert-success">
-                 <span>Message Sent! Thank you for contacting us.</span>
+                 <span>Сообщение послано! Благодарим Вас за обращение к нам.</span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">

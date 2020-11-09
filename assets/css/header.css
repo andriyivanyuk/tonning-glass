@@ -80,7 +80,6 @@
   margin-top: 126px;
 }
 .header-shell__down-content__action-button {
-  margin: 48px 0 180px;
   background-color: #c40b0b;
   box-sizing: border-box;
   border: none;
@@ -90,8 +89,15 @@
   padding: 9px 30px;
   line-height: 24px;
   letter-spacing: 1px;
+  margin-left: 32px;
+  font-weight: 700;
   cursor: pointer;
+  margin: 48px 0 180px;
 }
+.header-shell__down-content__action-button a { 
+  color: #ffffff;
+}
+ 
 .header-shell__down-content__action-button:focus {
   outline: none;
 }

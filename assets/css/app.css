@@ -8,6 +8,10 @@
 @import "appointment.css";
 @import "footer.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1020px;
   margin: 0 auto;

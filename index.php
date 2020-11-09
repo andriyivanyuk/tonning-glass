@@ -1,4 +1,4 @@
-<?php include 'sendemail.php'; ?>
+<!-- <?php include 'sendemail.php'; ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,12 +10,14 @@
   <link rel="stylesheet" href="assets/css/app.css" />
   <link rel="stylesheet" href="assets/libs/owl-carousel/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/libs/owl-carousel/assets/owl.theme.default.css" />
+  <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
   <!--alert messages start-->
-  <?php echo $alert; ?>
+  <!-- <?php echo $alert; ?> -->
   <!--alert messages end-->
 
   <div class="backdrop"></div>
@@ -61,9 +63,9 @@
                 </span>
               </div>
             </div>
-            <button href="#appointment_form" class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__appointment-btn">
+            <a href="#appointment-form" class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__appointment-btn">
               Назначить встречу
-            </button>
+            </a>
           </div>
         </div>
         <nav class="header-shell__upper-content__navigation-wrapper__main-navigation">
@@ -72,19 +74,19 @@
               <a href="#">Главная</a>
             </li>
             <li class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item">
-              <a href="#">О Нас</a>
+              <a href="#who-we-are">О Нас</a>
             </li>
             <li class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item">
-              <a class="advantage_link" href="#">Преимущества</a>
+              <a class="advantage_link" href="#advantages">Преимущества</a>
             </li>
             <li class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item">
-              <a class="works_link" href="#">Наши работы</a>
+              <a class="works_link" href="#works">Наши работы</a>
             </li>
             <li class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item">
-              <a href="#">Услуги</a>
+              <a href="#services">Услуги</a>
             </li>
             <li class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item">
-              <a href="#">Контакт</a>
+              <a href="#contact">Контакт</a>
             </li>
           </ul>
         </nav>
@@ -116,14 +118,14 @@
       <div class="header-shell__down-content">
         <p class="header-shell__down-content__title">Тонировка автомобиля</p>
         <button class="header-shell__down-content__action-button">
-          Назначить встречу
+          <a href="#appointment-form"> Назначить встречу</a>
         </button>
       </div>
     </div>
   </header>
 
   <section class="about-us-shell">
-    <div class="about-us-shell__who-we-are">
+    <div class="about-us-shell__who-we-are" id="who-we-are">
       <div class="we-are-shell">
         <p class="about-us-shell__who-we-are__uptitle">
           <span class="about-us-shell__who-we-are__uptitle__content">О Нас</span>
@@ -141,7 +143,7 @@
     </div>
 
     <div class="container">
-      <div class="about-us-shell__promisses">
+      <div id="advantages" class="about-us-shell__promisses">
         <p class="about-us-shell__promisses__to-you">
           <span class="about-us-shell__promisses__to-you__content">
             Преимущества
@@ -229,7 +231,7 @@
     </div>
   </section>
 
-  <section class="carousel__shell">
+  <section class="carousel__shell" id="works">
     <div class="container">
       <p class="carousel__shell__uptitle">
         <span class="carousel__shell__uptitle__content">Наши работы</span>
@@ -263,7 +265,7 @@
     </div>
   </section>
 
-  <section class="services__shell">
+  <section class="services__shell" id="services">
     <div class="container">
       <p class="services__shell__uptitle">
         <span class="services__shell__uptitle__content">Услуги</span>
@@ -308,55 +310,74 @@
     </div>
   </section>
 
-  <section class="appointment__shell">
+  <section id="appointment-form" class="appointment__shell">
     <div class="container align-form">
       <h4 class="sent-notification"></h4>
-      <form action="" method="post" class="appointment__shell__main-form">
-          <p class="appointment__shell__main-form__title">Назначить встречу</p>
-          <div class="row">
-            <input class="appointment__name" type="text" name="name" placeholder="Имя" />
-            <input class="appointment__email" type="email" name="email" placeholder="Почта" />
+      <form method="post" class="appointment__shell__main-form" id="create-appointment">
+        <p class="appointment__shell__main-form__title">Назначить встречу</p>
+        <div class="row">
+          <div class="form-control">
+            <label>Имя</label>
+            <input class="appointment__input" type="text" name="name" placeholder="Введите имя" />
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small>Error message</small>
           </div>
 
-          <div class="row">
-            <input class="appointment__number" type="number" name="phone" placeholder="Номер Телефона" />
+          <div class="form-control">
+            <label>E-mail</label>
+            <input class="appointment__input" type="email" name="email" placeholder="Введите почту" />
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small>Error message</small>
+          </div>
 
-            <select class="appointment-select" name="service" id="cars">
+          <div class="form-control">
+            <label>Номер Телефона</label>
+            <input class="appointment__input" type="number" name="phone" placeholder="Введите номер телефона" />
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Выберите услугу</label>
+            <select class="appointment-select" name="service">
               <option value="выберите услугу">выберите услугу</option>
               <option value="тонировка стекел">тонировка стекел</option>
               <option value="бронирование фар">бронирование фар</option>
               <option value="тонировка автомобиля">тонировка автомобиля</option>
             </select>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small>Error message</small>
           </div>
 
-          <textarea name="description" class="appointment__textarea" id="" cols="30" rows="10"></textarea>
-          <div class="row align-appointment-btn">
-            <button
-              name="submit"
-              type="submit" 
-              class="appointment__btn">Назначить встречу
-            </button>
+          <div class="form-control">
+            <label>Введите сообщение</label>
+            <textarea name="description" class="appointment__textarea" id="description" cols="30" rows="10"></textarea>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small>Error message</small>
           </div>
-        </form>
-      <!-- <form class="appointment__shell__main-form" action="" method="post">
-        <div class="row">
-          <input type="text" name="name" class="appointment__name" placeholder="Your Name" required>
-          <input type="email" name="email" class="appointment__email" placeholder="Your Email" required>
         </div>
 
-        <textarea name="description" rows="5" placeholder="Your Message" required></textarea>
         <div class="row align-appointment-btn">
-            <button
-              type="submit" 
-              name="submit"
-              class="appointment__btn">Назначить встречу
-            </button>
-          </div>
-      </form> -->
+          <button
+            name="submit"
+            type="submit" 
+            class="appointment__btn">
+            Назначить встречу
+          </button>
+        </div>
+      </form>
     </div>
+
+
+
   </section>
 
-  <footer class="footer__shell">
+  <footer class="footer__shell" id="contact">
     <div class="container">
       <div class="footer__shell__elements">
         <div class="footer__shell__elements__general-content">
@@ -425,7 +446,7 @@
 
   <script src="assets/libs/jquery/jquery-3.5.1.min.js"></script>
   <script src="assets/libs//owl-carousel/owl.carousel.min.js"></script>
-  <script src="main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
