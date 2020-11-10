@@ -41,5 +41,10 @@ if(isset($_POST['submit'])){
                 <span>'.$e->getMessage().'</span>
               </div>';
   }
+  if($_SERVER['REQUEST_URI'] == '/sendemail.php'){
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: /");
+    exit();
+  }
 }
 ?>

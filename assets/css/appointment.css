@@ -112,6 +112,7 @@
   color: #dc3545;
   font-weight: 600;
 }
+
 .form-control.success input {
   border: solid 2px #28a745;
 }
@@ -125,6 +126,26 @@
 }
 .form-control.error input {
   border: solid 2px #dc3545;
+}
+.form-control .needed {
+  border: solid 2px #28a745;
+}
+.form-control .error-needed {
+  border: solid 2px #dc3545;
+}
+.form-control .show-err-desc {
+  visibility: visible;
+}
+.form-control.error i.error-icon {
+  visibility: hidden;
+}
+.error-icon {
+  visibility: hidden;
+}
+button:disabled,
+button[disabled]{
+  opacity: .65;
+  cursor: not-allowed;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .row {

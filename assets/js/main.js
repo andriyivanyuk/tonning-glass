@@ -7,46 +7,6 @@ var desktopNav = document.querySelector(
 var sticky = desktopNav.offsetTop;
 var advantageLink = document.querySelector(".advantage_link");
 var worksLink = document.querySelector(".works_link");
-//Form elements
-var appoinmentForm = document.querySelector(".appointment__shell__main-form");
-
-var forms = document.forms['create-appointment'];
-
-console.log(forms)
-
-appoinmentForm.addEventListener('submit', (e) => {
-   e.preventDefault();
-  
-});
-
-
-function checkInputs() {
-  const clientValue = name.value.trim();
-  const emailValue = email.value.trim();
-  const phoneValue = phone.value.trim();
-  const serviceValue = service.value.trim();
-  const descriptionValue = description.value.trim();
-
-  if(clientValue === '') {
-     setErrorFor(name, 'Client cannot be blank!');
-  } else {
-     setSuccessFor(name, )
-  }
-}
-
-function setErrorFor(input, message) {
-   const formControl = input.parentElement;
-   const small = formControl.querySelector('small');
-
-   small.innerText = message;
-   formControl.className = 'form-control error'
-}
-
-function setSuccessFor() {
-
-}
-
-
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -69,7 +29,6 @@ $(document).ready(function () {
     },
   });
 });
-
 
 
 toggleButton.addEventListener("click", function () {
