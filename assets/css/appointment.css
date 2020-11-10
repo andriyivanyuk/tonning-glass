@@ -142,6 +142,9 @@
 .error-icon {
   visibility: hidden;
 }
+.form-control .hide-desc  {
+  visibility: hidden;
+}
 button:disabled,
 button[disabled]{
   opacity: .65;
