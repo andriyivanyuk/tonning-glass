@@ -12,10 +12,14 @@
 .footer__shell__elements__general-content__title-content {
   font-size: 24px;
   color: #02133c;
-  margin-left: 10px;
+  align-self: flex-start;
+  margin-left: 16px;
+}
+.footer__shell__elements__general-content__title-image {
+  align-self: flex-start;
 }
 .footer__shell__elements__general-content__description {
-  margin-top: 23px;
+  margin-top: 6px;
   max-width: 235px;
   font-size: 16px;
   color: #4b4b4b;

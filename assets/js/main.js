@@ -7,6 +7,7 @@ var desktopNav = document.querySelector(
 var sticky = desktopNav.offsetTop;
 var advantageLink = document.querySelector(".advantage_link");
 var worksLink = document.querySelector(".works_link");
+var toggleBar = document.querySelector('.toggle-button');
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -48,7 +49,9 @@ window.onscroll = function () {
 function addStickyNav() {
   if (window.pageYOffset >= sticky) {
     desktopNav.classList.add("sticky");
+    toggleBar.classList.add("mobile-sticky");
   } else {
     desktopNav.classList.remove("sticky");
+    toggleBar.classList.remove("mobile-sticky");
   }
 }
