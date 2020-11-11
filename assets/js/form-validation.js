@@ -54,7 +54,7 @@ function checkService(node) {
     formControl.classList.remove('error');
   } else {
     sel.classList.add("error-needed");
-    small.innerText = "Пожалуйста укажите необходимую услугу";
+    small.innerText = "Пожалуйста укажите услугу";
     formControl.className = "form-control error";
     icon[0].classList.add("error-icon");
     icon[1].classList.add("error-icon");
