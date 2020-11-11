@@ -25,7 +25,7 @@
     margin-top: 33px;
     max-width: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
  
   .footer__shell__elements__contact__list__item {
@@ -60,6 +60,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .bussiness-title {
+    color: #ffffff;
+  }
   @media (min-width: 768px) and (max-width: 1023px) { 
     .footer__shell__elements {
       column-gap: 45px;
@@ -73,7 +76,7 @@
   }
   @media (max-width: 767px) {
     .footer__shell__elements__general-content__social-links {
-      margin-top: 20px;
+      margin: 20px auto;
     }
     .footer__shell__elements__contact__title {
       text-align: center;
@@ -85,4 +88,8 @@
     .footer__shell__elements__contact__list__item:first-child {
       margin-top: 10px;
     }
+    .footer__shell__elements__general-content__description { 
+      text-align: center;
+    }
+    
   }
