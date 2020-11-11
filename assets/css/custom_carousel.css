@@ -24,3 +24,10 @@
   text-transform: uppercase;
   font-weight: 700;
 }
+
+
+@media (min-width: 1024px) and (max-width: 1439px) { 
+  .carousel-item {
+    height: 150px;
+}
+}
