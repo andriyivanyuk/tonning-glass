@@ -31,6 +31,10 @@
   padding: 15px 20px;
 }
 
+.appointment__input::placeholder {
+  font-size: 12px;
+}
+
 .appointment-select {
   width: 100%;
 }
@@ -104,6 +108,7 @@
 .form-control small {
   visibility: hidden;
   position: absolute;
+  font-size: 11px;
   bottom: -6px;
   left: 0;
 }
