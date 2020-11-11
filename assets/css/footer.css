@@ -59,9 +59,19 @@
   .align-copyright {
     display: flex;
     justify-content: space-between;
+    column-gap: 16px;
   }
   .bussiness-title {
     color: #ffffff;
+    padding-left: 10px;
+  }
+  .footer__copyright__title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+  }
+  .footer__copyright__privacy { 
+    font-size: 14px;
   }
   @media (min-width: 768px) and (max-width: 1023px) { 
     .footer__shell__elements {
@@ -75,6 +85,9 @@
     }
   }
   @media (max-width: 767px) {
+    .footer__copyright__title {
+      flex-direction: column;
+    }
     .footer__shell__elements__general-content__social-links {
       margin: 20px auto;
     }
@@ -90,6 +103,9 @@
     }
     .footer__shell__elements__general-content__description { 
       text-align: center;
+    }
+    .footer__copyright__privacy {
+      text-align: right;
     }
     
   }

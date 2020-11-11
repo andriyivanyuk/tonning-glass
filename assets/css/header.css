@@ -1,3 +1,6 @@
+.main-logo {
+  width: 20px;
+}
 .header-shell {
   background-image: url("../images/header-background.webp");
   background-size: cover;
@@ -8,11 +11,12 @@
 .logo-title-shell {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .logo-title-shell img {
-  width: 30px;
   margin-left: 16px;
+  height: 45px;
+  width: 45px;
 }
 .header-shell__upper-content__navigation-wrapper__info-section__title {
   font-size: 20px;
@@ -94,10 +98,10 @@
   cursor: pointer;
   margin: 48px 0 180px;
 }
-.header-shell__down-content__action-button a { 
+.header-shell__down-content__action-button a {
   color: #ffffff;
 }
- 
+
 .header-shell__down-content__action-button:focus {
   outline: none;
 }
