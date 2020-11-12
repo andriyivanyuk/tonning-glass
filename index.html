@@ -4,162 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tonning Glass</title>
-    <link rel="icon" type="image/png" href="/assets/images/tg.png"/>
+    <link rel="icon" type="image/png" href="/assets/images/tg.png" />
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/libs/owl-carousel/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="assets/libs/owl-carousel/assets/owl.theme.default.css"/>
-    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css"/>
   </head>
 
   <body>
-    <div class="backdrop"></div>
-    <header class="header-shell">
-      <div class="header-shell__upper-content">
-        <div class="header-shell__upper-content__navigation-wrapper">
-          <div
-            class="header-shell__upper-content__navigation-wrapper__info-section"
-          >
-            <button class="toggle-button">
-              <span class="toggle-button__bar"></span>
-              <span class="toggle-button__bar"></span>
-              <span class="toggle-button__bar"></span>
-            </button>
-
-            <div class="logo-title-shell">
-              <img class="main-logo" src="/assets/images/tg.png" alt="" />
-              <div
-                class="header-shell__upper-content__navigation-wrapper__info-section__title"
-              >
-                company
-              </div>
-            </div>
-
-            <div
-              class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper"
+    <!-- Header -->
+    <section id="header">
+      <div class="header shell">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero"
+              ><h1><span>T</span>on <span>_</span>grad</h1></a
             >
-              <div
-                class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__hours"
-              >
-                <img
-                  class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__hours__clock-image"
-                  src="./assets/images/timer.svg"
-                  alt=""
-                />
-                <div class="hours-duration-shell">
-                  <span
-                    class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__hours__title"
-                  >
-                    Часы работы
-                  </span>
-                  <span
-                    class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__hours__duration"
-                  >
-                    Пн - Суб: 9:00 - 20:00
-                  </span>
-                </div>
-              </div>
-
-              <div
-                class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__call-us"
-              >
-                <img
-                  class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__call-us__phone-image"
-                  src="./assets/images/phone_24px.svg"
-                  alt=""
-                />
-                <div class="title-number-shell">
-                  <span
-                    class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__call-us__title"
-                  >
-                    Свяжитесь с нами
-                  </span>
-
-                  <span
-                    class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__call-us__number"
-                  >
-                    +38 068-228-4467
-                  </span>
-                </div>
-              </div>
-              <a
-                href="#appointment-form"
-                class="header-shell__upper-content__navigation-wrapper__info-section__services-wrapper__appointment-btn"
-              >
-                Назначить встречу
-              </a>
-            </div>
           </div>
-          <nav
-            class="header-shell__upper-content__navigation-wrapper__main-navigation"
-          >
-            <ul
-              class="header-shell__upper-content__navigation-wrapper__main-navigation__list"
-            >
-              <li
-                class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item"
-              >
-                <a href="#">Главная</a>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Главная</a></li>
+              <li><a href="#who-we-are" data-after="Service">О Нас</a></li>
+              <li>
+                <a href="#advantages" data-after="Projects">Преимущества</a>
               </li>
-              <li
-                class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item"
-              >
-                <a href="#who-we-are">О Нас</a>
-              </li>
-              <li
-                class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item"
-              >
-                <a class="advantage_link" href="#advantages">Преимущества</a>
-              </li>
-              <li
-                class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item"
-              >
-                <a class="works_link" href="#works">Наши работы</a>
-              </li>
-              <li
-                class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item"
-              >
-                <a href="#services">Услуги</a>
-              </li>
-              <li
-                class="header-shell__upper-content__navigation-wrapper__main-navigation__list__item"
-              >
-                <a href="#contact">Контакт</a>
-              </li>
+              <li><a href="#works" data-after="About">Наши работы</a></li>
+              <li><a href="#services" data-after="Contact">Услуги</a></li>
+              <li><a href="#contact" data-after="Contact">Контакт</a></li>
             </ul>
-          </nav>
-
-          <nav class="header__shell__mobile-navigation">
-            <ul class="header__shell__mobile-navigation__list">
-              <li class="header__shell__mobile-navigation__list__item">
-                <a href="#">Главная</a>
-              </li>
-              <li class="header__shell__mobile-navigation__list__item">
-                <a href="#who-we-are">О Нас</a>
-              </li>
-              <li class="header__shell__mobile-navigation__list__item">
-                <a href="#advantages">Преимущества</a>
-              </li>
-              <li class="header__shell__mobile-navigation__list__item">
-                <a href="#works">Наши работы</a>
-              </li>
-              <li class="header__shell__mobile-navigation__list__item">
-                <a href="#services">Услуги</a>
-              </li>
-              <li class="header__shell__mobile-navigation__list__item">
-                <a href="#contact">Контакт</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="header-shell__down-content">
-          <p class="header-shell__down-content__title">Тонировка автомобиля</p>
-          <button class="header-shell__down-content__action-button">
-            <a href="#appointment-form"> Назначить встречу</a>
-          </button>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero shell">
+          <div>
+            <h1>Тонировка <span></span></h1>
+            <h1>Вашего <span></span></h1>
+            <h1>Автомобиля <span></span></h1>
+            <a href="#projects" type="button" class="cta">Назначить встречу</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
 
     <section class="about-us-shell">
       <div class="about-us-shell__who-we-are" id="who-we-are">
